@@ -1,8 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
-    <title>Bi123-רҵ����ҵ�����վ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bi123-专业虚拟币导航网站</title>
     <style type="text/css">@import "./css/main.css"</style>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
@@ -11,26 +11,24 @@
     $(document).ready(function(){
         $("#demo1").click(function() {
             // alert("123")
-            <!--$.get(
-            "https://www.baidu.com",
-            {},
-            function(data, status) {
-                alert("result:")
-            }, "json");-->
-
-            <!--$.getJSON("https://www/baidu.com", {}, function(json) {
-                alert("qweqwe");
-            });-->
+            $.ajax({
+                url: "https://www.okcoin.cn/api/v1/ticker.do",
+                type: 'GET',
+                success: function (data) {
+                    // alert("123");
+                    console.info("asdfasdf");
+                }
+            });
         });
     });
     </script>
 </head>
 <div>
 <div class="header">
-    <h1>Bi123-רҵ����ҵ�����վ</h1>
-    <p class="description">����ȫ�������ַ����:http://www.bi123.wang <a
+    <h1>Bi123-专业虚拟币导航网站</h1>
+    <p class="description">最简单最安全虚拟币网址导航:http://www.bi123.wang <a
             onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('index.html');return(false);"
-            href="index.html">��Ϊ��ҳ</a></p></div>
+            href="index.html">设为首页</a></p></div>
 <div class="search">
     <form action="http://www.baidu.com/baidu" target="_blank">
         <table>
@@ -38,7 +36,7 @@
                 <td>
                     <input name="tn" type="hidden" value="baidu"/>
                     <input type="text" class="i" name="word" size="30"/>
-                    <span class="btn_wr"><input type="submit" class="btn" value="�ٶ�һ��"
+                    <span class="btn_wr"><input type="submit" class="btn" value="百度一下"
                                                 onmousedown="this.className='btn btn_h'"
                                                 onmouseout="this.className='btn'"/></span>
                 </td>
@@ -48,37 +46,37 @@
 </div>
 <div class="sites">
     <dl>
-        <dt>�� ��</dt>
-        <dd><a href="https://www.jubi.com/" target="_blank">�۱���</a></dd>
-        <dd><a href="https://yunbi.com/" target="_blank">�� ��</a></dd>
-        <dd><a href="https://www.btc9.com/" target="_blank">�Ҿ���</a></dd>
-        <dd><a href="https://cn.bter.com/" target="_blank">���ض�</a></dd>
-        <dd><a href="https://www.okcoin.cn/" target="_blank">okcoin����</a></dd>
-        <dd><a href="https://www.huobi.com/" target="_blank">�����</a></dd>
-        <dd><a href="https://www.btcchina.com/" target="_blank">���ر��й�</a></dd>
+        <dt>国 内</dt>
+        <dd><a href="https://www.jubi.com/" target="_blank">聚币网</a></dd>
+        <dd><a href="https://yunbi.com/" target="_blank">云 币</a></dd>
+        <dd><a href="https://www.btc9.com/" target="_blank">币久网</a></dd>
+        <dd><a href="https://cn.bter.com/" target="_blank">比特儿</a></dd>
+        <dd><a href="https://www.okcoin.cn/" target="_blank">okcoin币行</a></dd>
+        <dd><a href="https://www.huobi.com/" target="_blank">火币网</a></dd>
+        <dd><a href="https://www.btcchina.com/" target="_blank">比特币中国</a></dd>
     </dl>
     <dl>
-        <dt>�� վ</dt>
-        <dd><a href="http://www.btctrade.com" target="_blank">���رҽ�����</a></dd>
-        <dd><a href="http://www.btc38.com" target="_blank">���ر�ʱ��</a></dd>
-        <dd><a href="https://www.yuanbao.com" target="_blank">Ԫ����</a></dd>
+        <dt>名 站</dt>
+        <dd><a href="http://www.btctrade.com" target="_blank">比特币交易网</a></dd>
+        <dd><a href="http://www.btc38.com" target="_blank">比特币时代</a></dd>
+        <dd><a href="https://www.yuanbao.com" target="_blank">元宝网</a></dd>
         <dd><a href="http://www.19800.com" target="_blank">19800</a></dd>
-        <dd><a href="http://www.bichuang.com" target="_blank">�Ҵ���</a></dd>
-        <dd><a href="https://www.coinvc.com" target="_blank">�ҽ���</a></dd>
-        <dd><a href="http://www.dahonghuo.com" target="_blank">����</a></dd>
+        <dd><a href="http://www.bichuang.com" target="_blank">币创网</a></dd>
+        <dd><a href="https://www.coinvc.com" target="_blank">币交所</a></dd>
+        <dd><a href="http://www.dahonghuo.com" target="_blank">大红火</a></dd>
     </dl>
     <dl class="alt">
-        <dt>�� ��</dt>
-        <dd><a href="http://www.poloniex.com" target="_blank">P��</a></dd>
-        <dd><a href="http://www.bittrex.com" target="_blank">B��</a></dd>
+        <dt>国 外</dt>
+        <dd><a href="http://www.poloniex.com" target="_blank">P网</a></dd>
+        <dd><a href="http://www.bittrex.com" target="_blank">B网</a></dd>
         <dd><a href="http://www.bitfinex.com" target="_blank">bitfinex</a></dd>
         <dd><a href="http://www.bitmex.com" target="_blank">Bitmex</a></dd>
-        <dd><a href="http://www.btc-e.com" target="_blank">E��</a></dd>
-        <dd><a href="http://www.kraken.com" target="_blank">K��</a></dd>
+        <dd><a href="http://www.btc-e.com" target="_blank">E网</a></dd>
+        <dd><a href="http://www.kraken.com" target="_blank">K网</a></dd>
         <dd><a href="http://www.gdax.com" target="_blank">GDAX</a></dd>
     </dl>
     <dl class="alt">
-        <dt>�� վ</dt>
+        <dt>名 站</dt>
         <dd><a href="http://www.bitstamp.net" target="_blank">Bitstamp</a></dd>
         <dd><a href="http://www.gemini.com" target="_blank">Gemini</a></dd>
         <dd><a href="http://www.quoine.com" target="_blank">Quoine</a></dd>
@@ -88,10 +86,10 @@
         <dd><a href="" target="_blank"></a></dd>
     </dl>
     <dl>
-        <dt>ICO��վ</dt>
+        <dt>ICO名站</dt>
         <dd><a href="http://www.ico365.com" target="_blank">ICO365</a></dd>
         <dd><a href="http://www.icoage.com" target="_blank">ICOAGE</a></dd>
-        <dd><a href="http://www.bizhongchou.com" target="_blank">���ڳ�</a></dd>
+        <dd><a href="http://www.bizhongchou.com" target="_blank">币众筹</a></dd>
         <dd><a href="http://www.icocountdown.com" target="_blank">ICOCountDown</a></dd>
         <dd><a href="http://www.tokenmarket.net" target="_blank">TokenMarket</a></dd>
         <dd><a href="http://www.smithandcrown.com" target="_blank">SmithAndCrown</a></dd>
@@ -101,40 +99,40 @@
 
 <div class="sites">
     <dl>
-        <dt><a id="demo1">���ر�(BTC)</a></dt><dt>���ر�(LTC)</dt><dt>��̫��(ETH)</dt>
+        <dt><a id="demo1">比特币(BTC)</a></dt><dt>莱特币(LTC)</dt><dt>以太坊(ETH)</dt>
     </dl>
 
     <dl class="alt">
         <dt><a href="https://www.okcoin.cn/" target="_blank">OKCoin</a></dt>
-        <dd>���¼ۣ�<font color="#FFAA33">111</font></dd>
-        <dd>���<font color="#FFAA33">111</font></dd>
-        <dd>���<font color="#FFAA33">111</font></dd>
-        <dd>��һ<font color="#FFAA33">111</font></dd>
-        <dd>��һ<font color="#FFAA33">111</font></dd>
-        <dd>��<font color="#FFAA33">111</font></dd>
+        <dd>最新价：<font color="#FFAA33">111</font></dd>
+        <dd>最高<font color="#FFAA33">111</font></dd>
+        <dd>最低<font color="#FFAA33">111</font></dd>
+        <dd>买一<font color="#FFAA33">111</font></dd>
+        <dd>卖一<font color="#FFAA33">111</font></dd>
+        <dd>量<font color="#FFAA33">111</font></dd>
     </dl>
     <dl>
-        <dt><a href="https://www.btcchina.com/" target="_blank">���ر��й�</a></dt>
-        <dd>���¼ۣ�<font color="#FFAA33">111</font></dd>
-        <dd>���<font color="#FFAA33">111</font></dd>
-        <dd>���<font color="#FFAA33">111</font></dd>
-        <dd>��һ<font color="#FFAA33">111</font></dd>
-        <dd>��һ<font color="#FFAA33">111</font></dd>
-        <dd>��<font color="#FFAA33">111</font></dd>
+        <dt><a href="https://www.btcchina.com/" target="_blank">比特币中国</a></dt>
+        <dd>最新价：<font color="#FFAA33">111</font></dd>
+        <dd>最高<font color="#FFAA33">111</font></dd>
+        <dd>最低<font color="#FFAA33">111</font></dd>
+        <dd>买一<font color="#FFAA33">111</font></dd>
+        <dd>卖一<font color="#FFAA33">111</font></dd>
+        <dd>量<font color="#FFAA33">111</font></dd>
     </dl>
     <dl class="alt">
         <dt><a href="http://www.btctrade.com" target="_blank">BTCTrade</a></dt>
-        <dd>���¼ۣ�<font color="#FFAA33">111</font></dd>
-        <dd>���<font color="#FFAA33">111</font></dd>
-        <dd>���<font color="#FFAA33">111</font></dd>
-        <dd>��һ<font color="#FFAA33">111</font></dd>
-        <dd>��һ<font color="#FFAA33">111</font></dd>
-        <dd>��<font color="#FFAA33">111</font></dd>
+        <dd>最新价：<font color="#FFAA33">111</font></dd>
+        <dd>最高<font color="#FFAA33">111</font></dd>
+        <dd>最低<font color="#FFAA33">111</font></dd>
+        <dd>买一<font color="#FFAA33">111</font></dd>
+        <dd>卖一<font color="#FFAA33">111</font></dd>
+        <dd>量<font color="#FFAA33">111</font></dd>
     </dl>
 
     <dl>
-        <p align="center">������1sǰ | ����֧�֣�DriverCar</p>
+        <p align="center">更新于1s前 | 技术支持：DriverCar</p>
     </dl>
 </div>
-<div class="footer">&copy;2017 DriveCar ��Ȩ����   ��ϵ����Q��1234567890</div>
+<div class="footer">&copy;2017 DriveCar 版权所有   联系我们Q：1234567890</div>
 </html>
