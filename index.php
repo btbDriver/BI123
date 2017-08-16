@@ -17,10 +17,18 @@
 <div id="timeDataDiv">
 <?php include("timedataempty.php") ?>
 </div>
+<!-- 榜单 -->
+<div id="billBoardDiv">
+</div>
+
 <script type="text/javascript">
      setInterval(function(){
             $("#timeDataDiv").load("timedata.php");
-        }, 2000);
+        }, 2 * 1000);
+
+     setInterval(function(){
+            $("#billBoardDiv").load("billboard.php");
+        }, 2 * 1000);
 </script>
 
 <div class="footer">&copy;2017 DriveCar 版权所有   联系我们Q：1234567890</div>
