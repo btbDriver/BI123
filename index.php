@@ -15,7 +15,6 @@
 <?php include("website.php") ?>
 <!-- 定时任务 -->
 <div id="timeDataDiv">
-<?php include("timedata.php") ?>
 </div>
 <script type="text/javascript">
      setInterval(function(){

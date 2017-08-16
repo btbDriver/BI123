@@ -20,13 +20,20 @@
             $html = file_get_contents($url);
             $obj=json_decode($html);
 
+            $last = round((double)$obj->ticker->last, 2);
+            $high = round((double)$obj->ticker->high, 2);
+            $low = round((double)$obj->ticker->low, 2);
+            $buy = round((double)$obj->ticker->buy, 2);
+            $sell = round((double)$obj->ticker->sell, 2);
+            $vol = round((double)$obj->ticker->vol, 2);
+
             echo "<dt><a href=\"https://www.okcoin.cn/\" target=\"_blank\">OKCoin</a></dt>";
-            echo "<dd>最新: <font color=\"#FFAA33\">{$obj->ticker->last}</font></dd>";
-            echo "<dd>最高: <font color=\"#FFAA33\">{$obj->ticker->high}</font></dd>";
-            echo "<dd>最低: <font color=\"#FFAA33\">{$obj->ticker->low}</font></dd>";
-            echo "<dd>买一: <font color=\"#FFAA33\">{$obj->ticker->buy}</font></dd>";
-            echo "<dd>卖一: <font color=\"#FFAA33\">{$obj->ticker->sell}</font></dd>";
-            echo "<dd>量: <font color=\"#FFAA33\">{$obj->ticker->vol}</font></dd>";
+            echo "<dd>最新: <font color=\"#FFAA33\">{$last}</font></dd>";
+            echo "<dd>最高: <font color=\"#FFAA33\">{$high}</font></dd>";
+            echo "<dd>最低: <font color=\"#FFAA33\">{$low}</font></dd>";
+            echo "<dd>买一: <font color=\"#FFAA33\">{$buy}</font></dd>";
+            echo "<dd>卖一: <font color=\"#FFAA33\">{$sell}</font></dd>";
+            echo "<dd>量: <font color=\"#FFAA33\">{$vol}</font></dd>";
         ?>
     </dl>
     <dl>
@@ -35,13 +42,20 @@
             $html = file_get_contents($url);
             $obj=json_decode($html);
 
+            $last = round((double)$obj->ticker->last, 2);
+            $high = round((double)$obj->ticker->high, 2);
+            $low = round((double)$obj->ticker->low, 2);
+            $buy = round((double)$obj->ticker->buy, 2);
+            $sell = round((double)$obj->ticker->sell, 2);
+            $vol = round((double)$obj->ticker->vol, 2);
+
             echo "<dt><a href=\"https://www.btcchina.com/\" target=\"_blank\">比特币中国</a></dt>";
-            echo "<dd>最新:<font color=\"#FFAA33\">{$obj->ticker->last}</font></dd>";
-            echo "<dd>最高:<font color=\"#FFAA33\">{$obj->ticker->high}</font></dd>";
-            echo "<dd>最低:<font color=\"#FFAA33\">{$obj->ticker->low}</font></dd>";
-            echo "<dd>买一:<font color=\"#FFAA33\">{$obj->ticker->buy}</font></dd>";
-            echo "<dd>卖一:<font color=\"#FFAA33\">{$obj->ticker->sell}</font></dd>";
-            echo "<dd>量:<font color=\"#FFAA33\">{$obj->ticker->vol}</font></dd>";
+            echo "<dd>最新:<font color=\"#FFAA33\">{$last}</font></dd>";
+            echo "<dd>最高:<font color=\"#FFAA33\">{$high}</font></dd>";
+            echo "<dd>最低:<font color=\"#FFAA33\">{$low}</font></dd>";
+            echo "<dd>买一:<font color=\"#FFAA33\">{$buy}</font></dd>";
+            echo "<dd>卖一:<font color=\"#FFAA33\">{$sell}</font></dd>";
+            echo "<dd>量:<font color=\"#FFAA33\">{$vol}</font></dd>";
         ?>
     </dl>
     <dl class="alt">
@@ -50,13 +64,20 @@
             $html = file_get_contents($url);
             $obj=json_decode($html);
 
+            $last = round((double)$obj->last, 2);
+            $high = round((double)$obj->high, 2);
+            $low = round((double)$obj->low, 2);
+            $buy = round((double)$obj->buy, 2);
+            $sell = round((double)$obj->sell, 2);
+            $vol = round((double)$obj->vol, 2);
+
             echo "<dt><a href=\"http://www.btctrade.com\" target=\"_blank\">BTCTrade</a></dt>";
-            echo "<dd>最新:<font color=\"#FFAA33\">{$obj->last}</font></dd>";
-            echo "<dd>最高:<font color=\"#FFAA33\">{$obj->high}</font></dd>";
-            echo "<dd>最低:<font color=\"#FFAA33\">{$obj->low}</font></dd>";
-            echo "<dd>买一:<font color=\"#FFAA33\">{$obj->buy}</font></dd>";
-            echo "<dd>卖一:<font color=\"#FFAA33\">{$obj->sell}</font></dd>";
-            echo "<dd>量:<font color=\"#FFAA33\">{$obj->vol}</font></dd>";
+            echo "<dd>最新:<font color=\"#FFAA33\">{$last}</font></dd>";
+            echo "<dd>最高:<font color=\"#FFAA33\">{$high}</font></dd>";
+            echo "<dd>最低:<font color=\"#FFAA33\">{$low}</font></dd>";
+            echo "<dd>买一:<font color=\"#FFAA33\">{$buy}</font></dd>";
+            echo "<dd>卖一:<font color=\"#FFAA33\">{$sell}</font></dd>";
+            echo "<dd>量:<font color=\"#FFAA33\">{$vol}</font></dd>";
         ?>
     </dl>
 
@@ -70,13 +91,20 @@
                     $html = file_get_contents($url);
                     $obj=json_decode($html);
 
+                    $last = round((double)$obj->ticker->last, 2);
+                    $high = round((double)$obj->ticker->high, 2);
+                    $low = round((double)$obj->ticker->low, 2);
+                    $buy = round((double)$obj->ticker->buy, 2);
+                    $sell = round((double)$obj->ticker->sell, 2);
+                    $vol = round((double)$obj->ticker->vol, 2);
+
                     echo "<dt><a href=\"https://www.okcoin.cn/\" target=\"_blank\">OKCoin</a></dt>";
-                    echo "<dd>最新: <font color=\"#FFAA33\">{$obj->ticker->last}</font></dd>";
-                    echo "<dd>最高: <font color=\"#FFAA33\">{$obj->ticker->high}</font></dd>";
-                    echo "<dd>最低: <font color=\"#FFAA33\">{$obj->ticker->low}</font></dd>";
-                    echo "<dd>买一: <font color=\"#FFAA33\">{$obj->ticker->buy}</font></dd>";
-                    echo "<dd>卖一: <font color=\"#FFAA33\">{$obj->ticker->sell}</font></dd>";
-                    echo "<dd>量: <font color=\"#FFAA33\">{$obj->ticker->vol}</font></dd>";
+                    echo "<dd>最新: <font color=\"#FFAA33\">{$last}</font></dd>";
+                    echo "<dd>最高: <font color=\"#FFAA33\">{$high}</font></dd>";
+                    echo "<dd>最低: <font color=\"#FFAA33\">{$low}</font></dd>";
+                    echo "<dd>买一: <font color=\"#FFAA33\">{$buy}</font></dd>";
+                    echo "<dd>卖一: <font color=\"#FFAA33\">{$sell}</font></dd>";
+                    echo "<dd>量: <font color=\"#FFAA33\">{$vol}</font></dd>";
                 ?>
             </dl>
             <dl>
@@ -85,13 +113,20 @@
                     $html = file_get_contents($url);
                     $obj=json_decode($html);
 
+                    $last = round((double)$obj->ticker->last, 2);
+                    $high = round((double)$obj->ticker->high, 2);
+                    $low = round((double)$obj->ticker->low, 2);
+                    $buy = round((double)$obj->ticker->buy, 2);
+                    $sell = round((double)$obj->ticker->sell, 2);
+                    $vol = round((double)$obj->ticker->vol, 2);
+
                     echo "<dt><a href=\"https://www.btcchina.com/\" target=\"_blank\">比特币中国</a></dt>";
-                    echo "<dd>最新:<font color=\"#FFAA33\">{$obj->ticker->last}</font></dd>";
-                    echo "<dd>最高:<font color=\"#FFAA33\">{$obj->ticker->high}</font></dd>";
-                    echo "<dd>最低:<font color=\"#FFAA33\">{$obj->ticker->low}</font></dd>";
-                    echo "<dd>买一:<font color=\"#FFAA33\">{$obj->ticker->buy}</font></dd>";
-                    echo "<dd>卖一:<font color=\"#FFAA33\">{$obj->ticker->sell}</font></dd>";
-                    echo "<dd>量:<font color=\"#FFAA33\">{$obj->ticker->vol}</font></dd>";
+                    echo "<dd>最新:<font color=\"#FFAA33\">{$last}</font></dd>";
+                    echo "<dd>最高:<font color=\"#FFAA33\">{$high}</font></dd>";
+                    echo "<dd>最低:<font color=\"#FFAA33\">{$low}</font></dd>";
+                    echo "<dd>买一:<font color=\"#FFAA33\">{$buy}</font></dd>";
+                    echo "<dd>卖一:<font color=\"#FFAA33\">{$sell}</font></dd>";
+                    echo "<dd>量:<font color=\"#FFAA33\">{$vol}</font></dd>";
                 ?>
             </dl>
             <dl class="alt">
@@ -100,13 +135,20 @@
                     $html = file_get_contents($url);
                     $obj=json_decode($html);
 
+                    $last = round((double)$obj->last, 2);
+                    $high = round((double)$obj->high, 2);
+                    $low = round((double)$obj->low, 2);
+                    $buy = round((double)$obj->buy, 2);
+                    $sell = round((double)$obj->sell, 2);
+                    $vol = round((double)$obj->vol, 2);
+
                     echo "<dt><a href=\"http://www.btctrade.com\" target=\"_blank\">BTCTrade</a></dt>";
-                    echo "<dd>最新:<font color=\"#FFAA33\">{$obj->last}</font></dd>";
-                    echo "<dd>最高:<font color=\"#FFAA33\">{$obj->high}</font></dd>";
-                    echo "<dd>最低:<font color=\"#FFAA33\">{$obj->low}</font></dd>";
-                    echo "<dd>买一:<font color=\"#FFAA33\">{$obj->buy}</font></dd>";
-                    echo "<dd>卖一:<font color=\"#FFAA33\">{$obj->sell}</font></dd>";
-                    echo "<dd>量:<font color=\"#FFAA33\">{$obj->vol}</font></dd>";
+                    echo "<dd>最新:<font color=\"#FFAA33\">{$last}</font></dd>";
+                    echo "<dd>最高:<font color=\"#FFAA33\">{$high}</font></dd>";
+                    echo "<dd>最低:<font color=\"#FFAA33\">{$low}</font></dd>";
+                    echo "<dd>买一:<font color=\"#FFAA33\">{$buy}</font></dd>";
+                    echo "<dd>卖一:<font color=\"#FFAA33\">{$sell}</font></dd>";
+                    echo "<dd>量:<font color=\"#FFAA33\">{$vol}</font></dd>";
                 ?>
             </dl>
 
