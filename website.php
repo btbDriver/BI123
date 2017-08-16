@@ -7,14 +7,23 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
 
-    <!--<script type="text/javascript" src="./js/jquery-1.9.0.js"></script>-->
+    <script type="text/javascript">
+        function addFavorite() {
+            window.external.addFavorite('http://www.bi123.wang','Bi123')
+        }
+    </script>
 </head>
 <div>
 <div class="header">
     <h1>Bi123-专业虚拟币导航网站</h1>
-    <p class="description">最简单最安全虚拟币网址导航:http://www.bi123.wang <a
-            onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('index.html');return(false);"
-            href="index.html">设为首页</a></p></div>
+    <p class="description">最简单最安全的虚拟币网址导航:http://www.bi123.wang
+        <a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('index.html');return(false);"
+           href="#">设为首页</a>
+        <a href="#" onclick="addFavorite()" title="收藏本站到收藏夹">收藏本站</a>
+    </p>
+</div>
+
+
 <div class="search">
     <form action="http://www.baidu.com/baidu" target="_blank">
         <table>
