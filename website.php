@@ -6,22 +6,8 @@
     <style type="text/css">@import "./css/main.css"</style>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+
     <!--<script type="text/javascript" src="./js/jquery-1.9.0.js"></script>-->
-    <script type="text/javascript">
-    $(document).ready(function(){
-        $("#demo1").click(function() {
-            // alert("123")
-            $.ajax({
-                url: "https://www.okcoin.cn/api/v1/ticker.do",
-                type: 'GET',
-                success: function (data) {
-                    // alert("123");
-                    console.info("asdfasdf");
-                }
-            });
-        });
-    });
-    </script>
 </head>
 <div>
 <div class="header">
@@ -96,43 +82,3 @@
         <dd><a href="" target="_blank"></a></dd>
     </dl>
 </div>
-
-<div class="sites">
-    <dl>
-        <dt><a id="demo1">比特币(BTC)</a></dt><dt>莱特币(LTC)</dt><dt>以太坊(ETH)</dt>
-    </dl>
-
-    <dl class="alt">
-        <dt><a href="https://www.okcoin.cn/" target="_blank">OKCoin</a></dt>
-        <dd>最新价：<font color="#FFAA33">111</font></dd>
-        <dd>最高<font color="#FFAA33">111</font></dd>
-        <dd>最低<font color="#FFAA33">111</font></dd>
-        <dd>买一<font color="#FFAA33">111</font></dd>
-        <dd>卖一<font color="#FFAA33">111</font></dd>
-        <dd>量<font color="#FFAA33">111</font></dd>
-    </dl>
-    <dl>
-        <dt><a href="https://www.btcchina.com/" target="_blank">比特币中国</a></dt>
-        <dd>最新价：<font color="#FFAA33">111</font></dd>
-        <dd>最高<font color="#FFAA33">111</font></dd>
-        <dd>最低<font color="#FFAA33">111</font></dd>
-        <dd>买一<font color="#FFAA33">111</font></dd>
-        <dd>卖一<font color="#FFAA33">111</font></dd>
-        <dd>量<font color="#FFAA33">111</font></dd>
-    </dl>
-    <dl class="alt">
-        <dt><a href="http://www.btctrade.com" target="_blank">BTCTrade</a></dt>
-        <dd>最新价：<font color="#FFAA33">111</font></dd>
-        <dd>最高<font color="#FFAA33">111</font></dd>
-        <dd>最低<font color="#FFAA33">111</font></dd>
-        <dd>买一<font color="#FFAA33">111</font></dd>
-        <dd>卖一<font color="#FFAA33">111</font></dd>
-        <dd>量<font color="#FFAA33">111</font></dd>
-    </dl>
-
-    <dl>
-        <p align="center">更新于1s前 | 技术支持：DriverCar</p>
-    </dl>
-</div>
-<div class="footer">&copy;2017 DriveCar 版权所有   联系我们Q：1234567890</div>
-</html>
